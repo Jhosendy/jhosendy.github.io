@@ -1,0 +1,366 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+.cv-container {
+    width: 210mm; /* A4 width */
+    height: 297mm; /* A4 height */
+    max-width: 900px;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    position: absolute;
+    top: 0; /* Ajusta el encabezado al borde superior */
+    left: 0; /* Ajusta el encabezado al borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 110px; /* Ajusta la altura según sea necesario para llenar el espacio superior */
+    background-color: rgb(1, 92, 167); /* Color azul oscuro */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+.header-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column; /* Alinea verticalmente */
+    justify-content: center;
+    background-color: #eaeaea; /* Fondo gris */
+    padding: 30px 90px;
+    clip-path: polygon(0 100%, 0 0, 100% 0, 85% 100%); /* Triángulo en el lado derecho */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.name {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.name h1 {
+    margin: 0;
+    font-size: 2em;
+    line-height: 1.2;
+    color: #1f9ad3;
+}
+
+ MIPERFIL
+ .perfil {
+    margin: 0;
+    padding: 30px; /* Ajusta el padding para cambiar el tamaño del marco */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    border: 2px solid #3498db; /* Añade un borde celeste alrededor del marco */
+    border-radius: 5px; /* Opcional: redondea las esquinas del marco */
+    
+    top: 80px; /* Ajusta este valor para mover el marco hacia abajo */
+    left: 10%; /* Ajusta la posición horizontal si es necesario */
+}
+
+.perfil h2 {
+    background-color: #3498db; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    margin: 0;
+    padding: 0px;
+    display: inline-block;
+}
+
+
+
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra verticalmente en el contenedor */
+    position: absolute;
+    top: 50%; /* Mueve al 50% del contenedor */
+    right: 10px;
+    transform: translateY(-50%); /* Ajusta para centrar verticalmente */
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px; /* Ajusta el margen inferior para separar de la sección de contacto */
+    margin-top: 300px; /* Añadimos margen superior para bajar la imagen */
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+}
+
+.contacto {
+    position: absolute;
+    top: 60%; /* Mueve el contenido más abajo */
+    left:10%; /* Mueve el contenido al centro horizontalmente */
+    transform: translate(-380%, -6%); /* Ajusta el contenido al centro exacto */
+    text-align: center; /* Centra el texto dentro del bloque */
+    color: #3498db;
+    width: 100%; /* Asegura que el contenido use el ancho completo disponible */
+    max-width: 600px; /* Ajusta según el tamaño deseado */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+.contacto h2 {
+    margin: 0;
+    background-color: #6AA8C9;
+    padding: 10px;
+    display: inline-block;
+}
+
+.contacto p {
+    margin: 5px 0;
+}
+
+.line span{
+   position: absolute;
+   top: 10;
+   left: 20;
+   color: black;
+}
+
+.line2 {
+    position: absolute;
+    top: 50px; /* Ajusta la posición vertical para moverlo más abajo */
+    left: 20px; /* Mantén la posición horizontal según sea necesario */
+    white-space: nowrap;
+}
+
+.line2 span {
+    color: black; /* Color del texto */
+}
+
+.line1 span {
+    position: absolute;
+    top: 10;
+    left:200px;
+    color: black;
+    white-space: nowrap;
+
+    
+ }
+
+
+
+ .line3 {
+    position: absolute;
+    top: 50px; /* Ajusta este valor para mover el texto más abajo */
+    left: 190px; /* Ajusta la posición horizontal si es necesario */
+    color: black; /* Color del texto */
+    white-space: nowrap;
+}
+
+ 
+.contacto {
+    text-align: center;
+    color: #3498db;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+}
+
+.contacto h2 {
+    margin: 0;
+    top: 90;
+    left: 0;
+    background-color: #6AA8C9;
+    padding: 0px;
+    display: inline-block;
+}
+
+.contacto-line {
+    display: flex; /* Usa flexbox para alinear elementos en una fila */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+}
+
+.contacto-info {
+    display: inline-block; /* Mantiene el texto en una sola línea */
+    white-space: nowrap; /* Evita el ajuste de línea */
+    overflow: hidden; /* Oculta el desbordamiento del texto */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+    margin: 0 10px; /* Espacio entre los elementos */
+}
+
+.contacto-info:not(:last-child) {
+    margin-right: 20px; /* Espacio entre los elementos de la misma línea */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 170px; /* Ajustar margen superior para no solaparse con el encabezado */
+}
+
+.left-column {
+    width: 60%;
+}
+
+.right-column {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinear al inicio de la columna */
+    height: calc(100vh - 60px); /* Ajustar la altura */
+}
+
+.objetivo, .formacion, .experiencia {
+    margin-bottom: 20px;
+    margin-top: 20px; /* Aumentar margen superior */
+}
+
+
+
+
+
+.objetivo h2, .formacion h2, .experiencia h2 {
+    color: white;
+    background-color: #6AA8C9;
+    padding: 0px 70px;
+    margin: 0;
+    display: inline-block;
+}
+
+
+.objetivo p, .formacion .educacion p, .experiencia .trabajo p {
+    margin: 5px 0;
+}
+
+.formacion .educacion, .experiencia .trabajo {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 10px;
+}
+
+aside {
+    position: relative;
+    left: 0; /* Pegar al canto izquierdo */
+    height: 100%; /* Usar todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinear al inicio de la columna */
+    margin-top: 200px; /* Ajusta el margen superior para mover las secciones más abajo */
+}
+
+aside section {
+    margin-bottom: 20px;
+}
+
+aside h2 {
+    color: white;
+    background-color: #6AA8C9;
+    padding: 5px 10px; /* Reducir el padding */
+    margin: 0;
+    display: inline-block;
+    width: 100%; /* Para que se extienda completamente */
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 5px 0;
+}
+
+aside .redes p {
+    margin: 5px 0;
+}
+
+aside .redes a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.informatica, .idiomas, .intereses, .redes {
+    background-color: #eaeaea; /* Fondo gris */
+    padding: 20px;
+    margin: 0; /* Elimina el margen entre secciones */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.informatica {
+    border-bottom: 1px solid #eaeaea; /* Asegura que no haya espacio entre secciones */
+}
+
+.idiomas {
+    border-bottom: 1px solid #eaeaea; /* Asegura que no haya espacio entre secciones */
+}
+
+.intereses {
+    border-bottom: 1px solid #eaeaea; /* Asegura que no haya espacio entre secciones */
+}
+
+.redes {
+    border-bottom: none; /* Elimina el borde en la última sección */
+}
+
+.informatica h2, .idiomas h2, .intereses h2, .redes h2 {
+    margin: 0;
+    background-color: #0d70cc; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    padding: 10px;
+    display: inline-block;
+}
+
+.informatica ul, .idiomas ul, .intereses ul, .redes p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.informatica ul li, .idiomas ul li, .intereses ul li, .redes p {
+    margin: 5px 0;
+}
+
+
+.experiencia {
+    margin-top: 30px; /* Ajusta este valor para subir la sección de Experiencia */
+    margin-bottom: 20px;
+}
+
+.trabajo {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 10px;
+}
+
+.trabajo p {
+    margin: 5px 0;
+}
+.educacion span {
+    color: #0d70cc;
+    position: absolute;
+    top: 200;
+    left: 400px;
+}
+
+.right-column {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinear al inicio de la columna */
+    height: calc(300vh - 60px); /* Ajustar la altura */
+    margin-top: 120px; /* Ajusta este valor para mover la columna hacia abajo */
+}
+
+
